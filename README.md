@@ -23,14 +23,14 @@ The Schema for the application is as follows :
 
 The design of the functionalities is as follows : 
 
- **ExpenseSharingApp Class**:
-   - The `Splitwise` class serves as the core of the application.
+ **Splitwise Class**:
+   - The Splitwise class serves as the core of the application.
    - It has the following attributes and methods:
-     - `users`: A dictionary that stores user objects with user IDs as keys.
-     - `add_user(user_id, name, email, mobile)`: A method for adding a new user to the application.
-     - `add_expense(user_paid, participants, amount, expense_type, splits)`: A method for adding a new expense to the application.
-     - `show_balances(user_id)`: A method for calculating and retrieving balances for a specific user.
-     - The `add_user` and `add_expense` methods ensure that users and expenses are added correctly, and the `show_balances` method calculates balances between users.
+     - users: A dictionary that stores user objects with user IDs as keys.
+     - add_user(user_id, name, email, mobile): A method for adding a new user to the application.
+     - add_expense(user_paid, participants, amount, expense_type, splits): A method for adding a new expense to the application.
+     - show_balances(user_id): A method for calculating and retrieving balances for a specific user.
+     - The add_user and add_expense methods ensure that users and expenses are added correctly, and the show_balances method calculates balances between users.
    
 Overall, this class structure allows you to create and manage users, track expenses, and calculate balances within the expense sharing application. Users, expenses, and their relationships are represented using objects, which provides a convenient way to organize and manipulate the data.
 
